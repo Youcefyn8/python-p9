@@ -34,3 +34,59 @@ multiline_text = """'foo'
 baz"""
 print(multiline_text)
 
+nombre = -123
+print(nombre)
+print (type(nombre))
+
+nombre = -123.0
+print(nombre)
+print (type(nombre))
+
+nombre = -3.14
+print(nombre)
+print (type(nombre))
+nombre = int(nombre)
+print(nombre)
+print(type(nombre))
+
+nombre = 3.14 
+print(nombre)
+nombre = int(nombre)
+print(nombre)
+print (type(nombre))
+
+texte = str(nombre)
+print(texte)
+print(type(texte))
+
+my_var = 0
+my_var = bool(my_var)
+print(my_var)
+
+my_var = 123
+my_var = bool(my_var)
+print(my_var)
+
+my_var = -123
+my_var = bool(my_var)
+print(my_var)
+
+my_var = ""
+my_var = bool(my_var)
+print(my_var)
+
+my_var = "0"
+my_var = bool(my_var)
+print(my_var)
+
+my_var = "123"
+my_var = bool(my_var)
+print(my_var)
+
+my_var = "-123"
+my_var = bool(my_var)
+print(my_var)
+
+my_var =[123, "abc" , False]
+my_var = bool(my_var)
+print(my_var)
