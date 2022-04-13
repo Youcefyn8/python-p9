@@ -2,11 +2,11 @@
 
 # exo 1.1
 # Affichez le message "programme démarré" en utilisant des doubles quotes
-
 # réponse 1.1
-print("hello")
+start = "programme démarré"
+print(start)
 # exo 1.2
 # Affichez le message "programme terminé" en utilisant des simples quotes
-print("coucou tout le monde")
 # réponse 1.2
-
+end = 'programme terminé'
+print(end)
