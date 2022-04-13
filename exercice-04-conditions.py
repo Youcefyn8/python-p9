@@ -7,6 +7,10 @@ import random
 # affectaction d'un nombre entier entre 0 et 99 à la variable number
 number = random.randint(0, 99)
 print(number)
+if number == 1:
+    print("le nombre est égale à 1")
+else:
+    print("le nombre est différent de 1")
 
 
 # exo 4.1
@@ -69,6 +73,9 @@ number = random.randint(0, 99)
 print(number)
 
 # réponse 4.5
+foo = 8
+if 5 < foo and foo < 10:
+    print('compris entre 5 et 10')
 
 # exo 4.6
 # écrivez un bloc if qui affiche

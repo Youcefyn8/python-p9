@@ -8,7 +8,19 @@
 # - la valeur booléenne vrai si nous sommes le matin, sinon la valeur booléenne faux, à une variable
 # - la valeur null `None` à une variable
 # Affichez ces variables
+import math
 
+
+nombre = 42
+print(nombre)
+nombre = 1.61
+print(nombre)
+nickname_lastname = "youcef nemmiche"
+print(nickname_lastname)
+has_accepted_ula= False
+print(has_accepted_ula)
+has_accepted_ula= None
+print(has_accepted_ula)
 # réponse 2.1
 
 # code 2.1
@@ -30,4 +42,15 @@ print(round(1 / 3, 4))
 # À chaque fois stockez le résultat dans une variable et affichez le résultat.
 
 # réponse 2.2
+print(round(2))
+float = 1.62
+print (float)
+float = 1.62
+print (int(float))
+number= 1.62
+number = round(number, 0)
+number = int(number)
+print(number)
+print(math.floor(2)) 
+
 

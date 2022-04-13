@@ -62,3 +62,23 @@ number = 42
 # number = number + 1 
 number += 1
 
+# -- ! <>
+a = 123
+b = 42 
+result = a == b
+print(result)
+
+# encadrement
+import random
+
+a = 42
+b = 123
+
+c = random.randint(1, 100) 
+
+result = a < 50 < b
+print(result)
+
+result = a < c < b
+print(c)
+print(result)

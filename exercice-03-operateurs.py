@@ -6,6 +6,9 @@
 # Ne tenez pas compte du mois, on va partir du principe qu'on est après le 10 février pour ne pas se compliquer la vie.
 # Stockez l'année en cours dans une variable nommée `year`.
 # Calculez l'âge d'Alice en utilisant les variables `birthyear` et `year` puis stockez le résultat dans une variable nommée `age` et affichez ce résultat.
+import statistics
+
+
 birthyear = 1988
 
 # réponse 3.1
@@ -49,6 +52,8 @@ print(chocolates_per_person)
 # Affectez le résultat à une variable et affichez le résultat.
 
 # réponse 3.4
+list =  [1+1+2+3+5+8+13]
+print(list)
 
 # exo 3.5
 # Alice est en vacance et elle veut suivre ses dépenses quotidiennes.
@@ -64,7 +69,8 @@ print(chocolates_per_person)
 # Affichez le nombre jours, le montant total et la moyenne des dépenses.
 
 # réponse 3.5
-
+day = [26,82+42,00+31,41+63,7+32]
+print(list)
 # exo 3.6
 # La formule suivante permet de convertir des miles en mètres :
 #
