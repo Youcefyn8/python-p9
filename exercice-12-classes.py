@@ -11,15 +11,13 @@
 # Pas la peine de créer de getters et de setters
 
 # réponse 12.1
-class user1:
-    def __init__(self, firstname: str, lastname: str, email: str, newsletter: int):
-        self._firstname = firstname
-        self._lastname = lastname
-        self._email = email
-        self._newsletter = False
 
-        user1 = user1("joe", "dalton", "joe.dalton@gmail.com", "false", )
-        print(user1)
+class User:
+    def __init__(self, firstname: str, lastname: str, email: str, newsletter: bool=False):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.email = email
+        self.newsletter = newsletter
 
 # exo 12.2
 # Créez 4 instances de la classe `User` et affectez les valeurs suivantes à ses attributs :
@@ -38,20 +36,28 @@ class user1:
 #   - lastname: Dalton
 #   - email: jack.dalton@example.com
 #   - newsletter: false
-# - user3
+# - user4
 #   - firstname: Avrel
 #   - lastname: Dalton
 #   - email: avrel.dalton@example.com
 #   - newsletter: true
 
 # réponse 12.2
+user1 = User("Joe", "Dalton", "joe.dalton@example.com", False)
+user2 = User("William", "Dalton", "William.dalton@example.com", True)
+user3 = User("Jack", "Dalton", "Jack.dalton@example.com", False)
+user4 = User("Avrel", "Dalton", "Avrel.dalton@example.com", True)
 
 # exo 12.3
 # Ajoutez chacune des instances de la classe `User` à une liste nommée `users`
 # Utilisez une boucle `for` (type `foreach`) pour afficher le nom complet et l'email de chaque utilisateur s'il est abonné à la newsletter (c-à-d si newsletter == True)
 
 # réponse 12.3
+user_list= [user1, user2, user3, user4]
 
+for user in user_list:
+    if user.newsletter == True:
+        print(f"{user.firstname}, {user.lastname}, email {user.email}")
 # exo 12.4
 # Créez une classe nommée `ProductLorem` qui possède les attributs suivants :
 # - _name: valeur par défaut ''
@@ -64,6 +70,30 @@ class user1:
 # - set_price() : détermine le prix du produit
 
 # réponse 12.4
+class ProductLorem:
+    def __init__(self, _name: str,_price: float or int):
+        self._name = _name
+        self._price = _price
+
+    def __str__(self) -> str:
+        f"{self._name}, {self._price}"
+
+    #getter
+    def get_name(self):
+        return self._name
+
+    def get_price(self):
+        return self._price
+
+    #setter
+    def set_name(self, name):
+        if type(name) is not str:
+            raise Exception("le nom est invalide (chiffre interdit)")
+    def set_price(self, price):
+        if type(price) is not float or int:
+            raise Exception("le price dois etre un nombre")
+
+    
 
 # exo 12.5
 # Créez 3 instances de la classe `ProductLorem` et affectez les valeurs suivantes à ses attributs en utilisant les setters :
@@ -78,6 +108,9 @@ class user1:
 #   - price: 16,18
 
 # réponse 12.5
+product1 = ProductLorem('Foo', 31.41)
+product2 = ProductLorem('Bar', 27.18)
+product3 = ProductLorem('Baz', 16.18)
 
 # exo 12.6
 # Ajoutez chacune des instances de la classe `ProductLorem` à une liste nommée `products`
