@@ -10,17 +10,28 @@ import random
 
 # réponse 6.1
 
+my_list= [1, 1.2 ,'foo',True]
+print(my_list)
+print("\n")
+
 # exo 6.2
 # Affichez l'élément qui se trouve à la troisième position de la liste
 my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
 
 # réponse 6.2
+print(my_list[2])
+print("\n")
+
 
 # exo 6.3
 # Ajoutez une chaîne de caractères à la fin de la liste `my_list` (sans modfier le code d'initialisation) et affichez le résultat
 my_list = ['foo', 'bar', 'baz', 'lorem', 'ipsum']
 
 # réponse 6.3
+
+my_list.append(123)
+print(my_list)
+print("\nf")
 
 # exo 6.4
 # Supprimez l'élément qui se trouve en deuxièm position de la liste et affichez le résultat
